@@ -1,0 +1,127 @@
+:root {
+    --secondary-color: #f3f6ff;
+    --primary-color: #f9fbff;
+    --feedback-color: #ffffff;
+    --feedback-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    --feedback-shadow-hoved:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;;
+    --icons-color: #81849c;
+    --btn-color: #ff70a4;
+    --btn-color-hoved: #ff85b2;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--secondary-color);
+}
+
+.form {
+    width: 490px;
+    height: auto;
+    padding: 4rem;
+    border-radius: 12px;
+    background-color: var(--primary-color);
+    /* box-shadow: var(--feedback-shadow); */
+    box-shadow: #e0e9ff 42px 42px 1px;
+}
+
+.form h2 {
+    margin-bottom: 18px;
+    font-size: 42px;
+}
+
+.form p {
+    padding: 18px 0;
+}
+
+.form textarea {
+    width: 100%;
+    height: 90px;
+    border-radius: 6px;
+    border: 2px solid rgba(0, 0, 0, 0.075);
+    margin-bottom: 12px;
+    padding: 10px;
+    resize: none;
+    font-weight: bold;
+    color: var(--icons-color);
+}
+
+.feedback-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.feedback-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 6px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--feedback-color);
+    box-shadow: var(--feedback-shadow);
+    cursor: pointer;
+    color: var(--icons-color);
+    font-size: 14px;
+}
+
+.feedback-icon:hover {
+    box-shadow: none;
+    box-shadow: var(--feedback-shadow-hoved);
+}
+
+.feedback-icon i {
+    font-size: 32px;
+    color: var(--icons-color);
+    margin-bottom: 4px;
+    display: block;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.button {
+    width: 120px;
+    height: 42px;
+    border: none;
+    background-color: var(--btn-color);
+    border-radius: 4px;
+    margin: 12px 0;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+    margin-right: 12px;
+}
+
+.button:hover {
+    background-color: var(--btn-color-hoved);
+}
