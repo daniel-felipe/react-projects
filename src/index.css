@@ -37,6 +37,7 @@ code {
     background-color: var(--secondary-color);
 }
 
+
 .form {
     width: 490px;
     height: auto;
@@ -57,7 +58,7 @@ code {
 }
 
 .form textarea {
-    width: 100%;
+    width: 96%;
     height: 90px;
     border-radius: 6px;
     border: 2px solid rgba(0, 0, 0, 0.075);
@@ -68,10 +69,36 @@ code {
     color: var(--icons-color);
 }
 
+.form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.button {
+    width: 120px;
+    height: 42px;
+    border: none;
+    background-color: var(--btn-color);
+    border-radius: 4px;
+    margin: 12px 0;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1.2px;
+    text-transform: capitalize;
+    margin-right: 12px;
+}
+
+.button:hover {
+    background-color: var(--btn-color-hoved);
+}
+
 .feedback-wrapper {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 23px;
 }
 
 .feedback-icon {
@@ -99,29 +126,4 @@ code {
     color: var(--icons-color);
     margin-bottom: 4px;
     display: block;
-}
-
-.form label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.button {
-    width: 120px;
-    height: 42px;
-    border: none;
-    background-color: var(--btn-color);
-    border-radius: 4px;
-    margin: 12px 0;
-    color: #fff;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 16px;
-    letter-spacing: 1.2px;
-    text-transform: capitalize;
-    margin-right: 12px;
-}
-
-.button:hover {
-    background-color: var(--btn-color-hoved);
 }

@@ -6,31 +6,31 @@ const Feedback = () => {
             <div className="feedback-wrapper">
                 <div className="feedback-icon">
                     <div>
-                        <i class="far fa-laugh"></i>
+                        <i className="far fa-laugh"></i>
                         <strong>Excelente</strong>
                     </div>
                 </div>
                 <div className="feedback-icon">
                     <div>
-                        <i class="far fa-grin"></i>
+                        <i className="far fa-grin"></i>
                         <strong>Bom</strong>
                     </div>
                 </div>
                 <div className="feedback-icon">
                     <div>
-                        <i class="far fa-meh"></i>
+                        <i className="far fa-meh"></i>
                         <strong>Razoável</strong>
                     </div>
                 </div>
                 <div className="feedback-icon">
                     <div>
-                        <i class="far fa-frown"></i>
+                        <i className="far fa-frown"></i>
                         <strong>Ruim</strong>
                     </div>
                 </div>
                 <div className="feedback-icon">
                     <div>
-                        <i class="far fa-dizzy"></i>
+                        <i className="far fa-dizzy"></i>
                         <strong>Terrível</strong>
                     </div>   
                 </div>
