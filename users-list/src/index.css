@@ -124,6 +124,7 @@ main {
 
 .user .user-photo {
     padding: 7px;
+    object-fit: contain;
 }
 
 .user .user-description {
@@ -135,6 +136,7 @@ main {
     width: 70px;
     height: 70px;
     border-radius: 70px;
+    object-fit: cover;
 }
 
 .user .tags-wrapper {

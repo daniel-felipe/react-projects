@@ -16,16 +16,16 @@ function App() {
                     <div className="user-actions">
                         <ul>    
                             <li>
-                                <a href="">Reputação</a>
+                                <a href="#">Reputação</a>
                             </li>
                             <li>
-                                <a href="">Novos usuários</a>
+                                <a href="#">Novos usuários</a>
                             </li>
                             <li>
-                                <a href="">Editores</a>
+                                <a href="#">Editores</a>
                             </li>
                             <li>
-                                <a href="">Moderadores</a>
+                                <a href="#">Moderadores</a>
                             </li>
                         </ul>
                     </div>
