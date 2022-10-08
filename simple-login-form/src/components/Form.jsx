@@ -1,9 +1,12 @@
 import React from 'react';
+import Button from './Button';
+import Checkbox from './Checkbox';
+import Input from './Input';
 
 const Form = ({ type, toggleFormType }) => {
     return (
-        <form className="w-5/12 p-6">
-            <div className="text-center text-gray-500 mb-12">
+        <form className="max-w-lg bg-white rounded-lg p-12">
+            <div className="text-center text-gray-600 mb-12">
                 {type === 'login' ? (
                     < >
                         <h2 className="text-2xl capitalize font-semibold mb-3">Welcome back!</h2>
@@ -15,46 +18,44 @@ const Form = ({ type, toggleFormType }) => {
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod assumenda.</p>
                     </>
                 )}
-
             </div>
+
             <div>
                 {type === 'register' && (
                     <div className="grid grid-cols-2 gap-3 mb-5">
                         <div>
-                            <label className="block mb-3 uppercase font-semibold text-gray-400" htmlFor="">first name</label>
-                            <input className="w-full h-12 px-3 border text-gray-500" type="text" placeholder="Enter your first name" name="name" />
+                            <Input name="first_name" placeholder="Enter your first name" />
                         </div>
                         <div>
-                            <label className="block mb-3 uppercase font-semibold text-gray-400" htmlFor="">last name</label>
-                            <input className="w-full h-12 px-3 border text-gray-500" type="text" placeholder="Enter your last name" name="second_name" />
+                            <Input name="last_name" placeholder="Enter your last name" />
                         </div>
                     </div>
                 )}
                 <div className="mb-5">
-                    <label className="block mb-3 uppercase font-semibold text-gray-400" htmlFor="">Email</label>
-                    <input className="w-full h-12 px-3 border text-gray-500" type="text" placeholder="Enter your email" name="email" />
+                    <Input name="email" type="email" placeholder="Enter your email" />
                 </div>
+
                 <div className="mb-5">
-                    <label className="block mb-3 uppercase font-semibold text-gray-400" htmlFor="">Password</label>
-                    <input className="w-full h-12 px-3 border text-gray-500" type="text" placeholder="Enter your email" name="password" />
+                    <Input name="password" type="password" placeholder="Enter your password" />
                 </div>
+
                 {type === 'login' && (
                     <div className="mb-5">
-                        <label className="text-gray-400 font-semibold flex items-center" htmlFor="">
-                            <input className="w-5 h-5 cursor-pointer mr-3" type="checkbox" name="remember" /> Remember-me
-                        </label>
+                        <Checkbox name="remember" label="Remember-me" />
                     </div>
                 )}
             </div>
+            
             <div>
-                <button type="submit" className="w-full h-16 bg-gradient-to-r from-blue-500 to-indigo-500 text-white uppercase shadow-lg rounded-lg transition hover:shadow-indigo-500/50 focus:scale-95">
+                <Button type="submit">
                     {type === 'login' ? 'log in' : 'sign up'}
-                </button>
+                </Button>
             </div>
+
             <div className="mt-6 text-center">
-                <a onClick={toggleFormType} className="uppercase text-indigo-400 cursor-pointer">
+                <button type="button" onClick={toggleFormType} className="uppercase text-indigo-400 cursor-pointer">
                     {type === 'login' ? 'sign up' : 'log in'}
-                </a>
+                </button>
             </div>
         </form>
     )

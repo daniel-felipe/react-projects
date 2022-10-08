@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState } from 'react';
 
 import Form from './components/Form';
@@ -12,7 +11,7 @@ const App = () => {
 
     return (
         < >
-            <main className="w-full h-screen flex justify-center items-center">
+            <main className="w-full h-screen flex justify-center items-center bg-slate-200 p-3">
                 <Form type={formType} toggleFormType={toggleFormType} />
             </main>
         </>  
