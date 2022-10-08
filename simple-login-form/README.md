@@ -6,10 +6,6 @@ This is a super simple project that was made to practice my React skills.
 
 Check it out: https://simple-log-form.netlify.app/
 
-## Available Scripts
-
-In the project directory, you can run:
-
 ### `npm start`
 
 Runs the app in the development mode.\
