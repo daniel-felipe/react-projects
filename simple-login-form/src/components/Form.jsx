@@ -5,7 +5,7 @@ import Input from './Input';
 
 const Form = ({ type, toggleFormType }) => {
     return (
-        <form className="max-w-lg bg-white rounded-lg p-12">
+        <form className="max-w-lg bg-white shadow rounded-lg p-6 sm:p-12">
             <div className="text-center text-gray-600 mb-12">
                 {type === 'login' ? (
                     < >
@@ -20,9 +20,9 @@ const Form = ({ type, toggleFormType }) => {
                 )}
             </div>
 
-            <div>
+            <div className="space-y-4 mb-6">
                 {type === 'register' && (
-                    <div className="grid grid-cols-2 gap-3 mb-5">
+                    <div className="grid md:grid-cols-2 gap-3">
                         <div>
                             <Input name="first_name" placeholder="Enter your first name" />
                         </div>
@@ -31,11 +31,12 @@ const Form = ({ type, toggleFormType }) => {
                         </div>
                     </div>
                 )}
-                <div className="mb-5">
+
+                <div>
                     <Input name="email" type="email" placeholder="Enter your email" />
                 </div>
 
-                <div className="mb-5">
+                <div>
                     <Input name="password" type="password" placeholder="Enter your password" />
                 </div>
 

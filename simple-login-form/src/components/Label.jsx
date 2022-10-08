@@ -7,7 +7,7 @@ const formatName = (name) => {
 const Label = ({ name }) => {
     return (
         <label
-            className='block mb-3 uppercase text-sm font-semibold text-gray-600'
+            className='block mb-2 uppercase text-sm font-semibold text-gray-600'
             htmlFor={name}
         >
             {formatName(name)}

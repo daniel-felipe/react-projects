@@ -11,7 +11,7 @@ const App = () => {
 
     return (
         < >
-            <main className="w-full h-screen flex justify-center items-center bg-slate-200 p-3">
+            <main className="w-full min-h-screen flex justify-center items-center bg-slate-200 p-3">
                 <Form type={formType} toggleFormType={toggleFormType} />
             </main>
         </>  
